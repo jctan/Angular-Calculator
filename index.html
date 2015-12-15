@@ -10,7 +10,7 @@
     <body ng-app="app" ng-controller="CalculatorController">
         <div class="page-header text-center">
             <h1 class="head">Calculator</h1>
-            <p>built in Angular.js</p>
+            <p>built with Angular.js</p>
         </div>
 
         <div class="calculator">
@@ -18,37 +18,37 @@
                 <div class="button-container">
                     <div class="btn-col-1 btn-col">
                         <div class="btn-col-container">
-                            <button class="calc-btn red-btn" data-value="C" ng-click='clickOperation("C")'>C</button>
-                            <button class="calc-btn" data-value="7" ng-click='clickNum(7)'>7</button>
-                            <button class="calc-btn" data-value="4" ng-click='clickNum(4)'>4</button>
-                            <button class="calc-btn" data-value="1" ng-click='clickNum(1)'>1</button>
-                            <button class="calc-btn" data-value="0" ng-click='clickNum(0)'>0</button>
+                            <button class="calc-btn red-btn" ng-click='clickOperation("C")'>C</button>
+                            <button class="calc-btn" ng-click='clickNum(7)'>7</button>
+                            <button class="calc-btn" ng-click='clickNum(4)'>4</button>
+                            <button class="calc-btn" ng-click='clickNum(1)'>1</button>
+                            <button class="calc-btn" ng-click='clickNum(0)'>0</button>
                         </div>
                     </div>
                     <div class="btn-col-2 btn-col">
                         <div class="btn-col-container">
                             <button class="calc-btn red-btn" data-value="+/-" ng-click='clickOperation("+/-")'>+/-</button>
-                            <button class="calc-btn" data-value="8" ng-click='clickNum(8)'>8</button>
-                            <button class="calc-btn" data-value="5" ng-click='clickNum(5)'>5</button>
-                            <button class="calc-btn" data-value="2" ng-click='clickNum(2)'>2</button>
-                            <button class="calc-btn" data-value="." ng-click='clickOperation(".")'>.</button>
+                            <button class="calc-btn" ng-click='clickNum(8)'>8</button>
+                            <button class="calc-btn" ng-click='clickNum(5)'>5</button>
+                            <button class="calc-btn" ng-click='clickNum(2)'>2</button>
+                            <button class="calc-btn" ng-click='clickOperation(".")'>.</button>
                         </div>
                     </div>
                     <div class="btn-col-3 btn-col">
                         <div class="btn-col-container">
-                            <button class="calc-btn" data-value="percent" ng-click='clickOperation("%")'>%</button>
-                            <button class="calc-btn" data-value="9" ng-click='clickNum(9)'>9</button>
-                            <button class="calc-btn" data-value="6" ng-click='clickNum(6)'>6</button>
-                            <button class="calc-btn" data-value="3" ng-click='clickNum(3)'>3</button>
-                            <button class="calc-btn" data-value="=" ng-click='calculate()'>=</button>
+                            <button class="calc-btn" ng-click='clickOperation("%")'>%</button>
+                            <button class="calc-btn" ng-click='clickNum(9)'>9</button>
+                            <button class="calc-btn" ng-click='clickNum(6)'>6</button>
+                            <button class="calc-btn" ng-click='clickNum(3)'>3</button>
+                            <button class="calc-btn" ng-click='calculate()'>=</button>
                         </div>
                     </div>
                     <div class="btn-col-4 btn-col">
                         <div class="btn-col-container">
-                            <button class="calc-btn" data-value="divide" ng-click='clickOperation("/")'>&divide</button>
-                            <button class="calc-btn" data-value="times" ng-click='clickOperation("*")'>&times</button>
-                            <button class="calc-btn" data-value="minus" ng-click='clickOperation("-")'>-</button>
-                            <button class="calc-btn plus-btn" data-value="plus" ng-click='clickOperation("+")'>+</button>
+                            <button class="calc-btn" ng-click='clickOperation("/")'>&divide</button>
+                            <button class="calc-btn" ng-click='clickOperation("*")'>&times</button>
+                            <button class="calc-btn" ng-click='clickOperation("-")'>-</button>
+                            <button class="calc-btn plus-btn" ng-click='clickOperation("+")'>+</button>
                         </div>
                     </div>
                 </div>
