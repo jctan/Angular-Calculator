@@ -1,0 +1,97 @@
+body{
+    padding: 20px 0;
+}
+
+.head{
+    font-family: 'Open Sans',sans-serif;
+    font-size: 50px;
+}
+
+*:focus{
+    outline: 0;
+}
+
+.calculator{
+    width: 320px;
+    height: 450px;
+    border: 1px solid #e0e0e0;
+    border-radius: 10px;
+    margin: auto;
+    background-color: #e9e9e9;
+    box-shadow: inset 1px 1px 1px #ccc, 1px 1px 1px #ccc;
+}
+
+.display{
+    width: 85%;
+    height: 70px;
+    padding: 12px;
+    margin: 15px auto 13px;
+    font-size: 2em;
+    text-align: right;
+    border: 1px solid #e0e0e0;
+    border-radius: 10px;
+    background-color: lightgrey;
+    box-shadow: inset 1px 1px 1px #828282;
+}
+
+.button-container{
+    width: 90%;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-content: stretch;
+    align-items: center;
+}
+
+.btn-col{
+    width: 35%;
+    height: 350px;
+    order: 0;
+    flex: 0 1 auto;
+    align-self: auto;
+}
+
+.btn-col-container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-content: stretch;
+    align-items: center;
+}
+
+.btn-col-container .calc-btn:hover{
+    cursor: pointer;
+    background-color: dimgray;
+}
+
+.btn-col-container .calc-btn.red-btn:hover{
+    cursor: pointer;
+    background-color: indianred;
+}
+
+.calc-btn{
+    font-size: 1em;
+    width: 90%;
+    height: 15%;
+    border: 0.5px solid #000;
+    border-radius: 40%;
+    order: 0;
+    flex: 0 1 auto;
+    align-self: auto;
+    color: #fff;
+    background-color: darkgray;
+}
+
+.red-btn{
+    background-color: #fc7b67
+}
+
+.plus-btn{
+    height: 35%;
+    border-radius:10px;
+}

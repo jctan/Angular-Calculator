@@ -1,0 +1,74 @@
+<html>
+    <header>
+        <meta charset="utf-8">
+        <title>Javascript Calculator</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="main.css">
+    </header>
+    <body ng-app="app" ng-controller="CalculatorController">
+        <div class="page-header text-center">
+            <h1 class="head">Calculator</h1>
+            <p>built in Angular.js</p>
+        </div>
+
+        <div class="calculator">
+            <div class="display">{{ resultDisplay }}</div>
+                <div class="button-container">
+                    <div class="btn-col-1 btn-col">
+                        <div class="btn-col-container">
+                            <button class="calc-btn red-btn" data-value="C" ng-click='clickOperation("C")'>C</button>
+                            <button class="calc-btn" data-value="7" ng-click='clickNum(7)'>7</button>
+                            <button class="calc-btn" data-value="4" ng-click='clickNum(4)'>4</button>
+                            <button class="calc-btn" data-value="1" ng-click='clickNum(1)'>1</button>
+                            <button class="calc-btn" data-value="0" ng-click='clickNum(0)'>0</button>
+                        </div>
+                    </div>
+                    <div class="btn-col-2 btn-col">
+                        <div class="btn-col-container">
+                            <button class="calc-btn red-btn" data-value="+/-" ng-click='clickOperation("+/-")'>+/-</button>
+                            <button class="calc-btn" data-value="8" ng-click='clickNum(8)'>8</button>
+                            <button class="calc-btn" data-value="5" ng-click='clickNum(5)'>5</button>
+                            <button class="calc-btn" data-value="2" ng-click='clickNum(2)'>2</button>
+                            <button class="calc-btn" data-value="." ng-click='clickOperation(".")'>.</button>
+                        </div>
+                    </div>
+                    <div class="btn-col-3 btn-col">
+                        <div class="btn-col-container">
+                            <button class="calc-btn" data-value="percent" ng-click='clickOperation("%")'>%</button>
+                            <button class="calc-btn" data-value="9" ng-click='clickNum(9)'>9</button>
+                            <button class="calc-btn" data-value="6" ng-click='clickNum(6)'>6</button>
+                            <button class="calc-btn" data-value="3" ng-click='clickNum(3)'>3</button>
+                            <button class="calc-btn" data-value="=" ng-click='calculate()'>=</button>
+                        </div>
+                    </div>
+                    <div class="btn-col-4 btn-col">
+                        <div class="btn-col-container">
+                            <button class="calc-btn" data-value="divide" ng-click='clickOperation("/")'>&divide</button>
+                            <button class="calc-btn" data-value="times" ng-click='clickOperation("*")'>&times</button>
+                            <button class="calc-btn" data-value="minus" ng-click='clickOperation("-")'>-</button>
+                            <button class="calc-btn plus-btn" data-value="plus" ng-click='clickOperation("+")'>+</button>
+                        </div>
+                    </div>
+                </div>
+        </div>
+
+        <br />
+
+        <footer>
+            <div id="footerBox" class="container">
+                <div class="row text-center">
+                    Created by: <a href="http://johnctan.com" target="_blank"><b>John Tan</b></a>
+                </div>
+            </div>
+        </footer>
+        <script src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
+        <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+        <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+        <script src="http://cdnjs.cloudflare.com/ajax/libs/angular.js/1.3.14/angular.min.js"></script>
+        <script src="app.js"></script>
+    </body>
+
+</html>
